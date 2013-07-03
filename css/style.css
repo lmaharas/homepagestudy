@@ -1,0 +1,477 @@
+/*
+ * The Daily Beast Redesign Prototype
+ *
+ * @project     The Daily Beast
+ * @section     Homepage
+ * @date        2013-07-01
+ * @author      Lynn Maharas
+ * @copyright   2013 by The Newsweek Daily Beast Company
+ *
+ */
+
+/* font-sizes:
+ *      px: 10, 12, 14, 16,  18, 26, 56
+ */
+
+/* font-family: 
+ *		"TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+ * 		
+ */
+
+/* colors:
+ *
+ *      Daily Beast Red - #ee2e24;
+ *      
+ */
+
+/* 
+ * DEFAULT
+ */
+body {
+	width: 1280px;
+	margin: auto;
+	color: #000;
+}
+
+a {
+	display: block;
+	color: #000;
+}
+
+a:hover,
+.no-touch .trending-topics a:hover {
+	color: #ee2e24;
+}
+
+.header,
+.body {
+	margin: 0 auto;
+}
+
+/*
+ * COLORS
+ */
+.bkgd-yellow {
+	background-color: #fef200;
+}
+
+.bkgd-red {
+	background-color: #ee2e24;
+}
+
+/*
+ * COMMON MODULES
+ */
+/* comment-box */
+.comment-box-sm {
+	padding: 2px 16px;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: "TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+	line-height: 30px;
+	display: inline-block;	
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.comment-box-sm.bkgd-yellow:after {
+    content: "";
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    display: block;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #fef200;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -8px;	
+}
+
+.comment-box-sm.bkgd-red:after {
+    content: "";
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    display: block;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #ee2e24;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -8px;	
+}
+
+/* arrow-right */
+.arrow-right-yellow,
+.arrow-right-red {
+	padding: 0 10px 0 20px;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: "TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+	line-height: 30px;
+	position: relative;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.arrow-right-yellow { color: #000; }
+.arrow-right-red { color: #fff; }
+
+.arrow-right-yellow:after {
+    content: "";
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    display: block;
+    border-top: 15px solid transparent;
+    border-left: 10px solid #fef200;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: -9px;
+}
+
+.arrow-right-red:after {
+    content: "";
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    display: block;
+    border-top: 15px solid transparent;
+    border-left: 10px solid #ee2e24;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: -9px;
+}
+
+
+/*
+ * MEDIA-BLOCK
+ */
+/* clearfix */
+.media-block:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.media-block {
+    display: inline-block;
+}
+
+* html .media-block {
+    height: 1%;
+}
+
+.media-block {
+    display: block;
+}
+
+/* display */
+.media-block {
+    overflow: hidden;
+    _overflow: visible;
+    zoom: 1;
+}
+
+.media-block a {
+    overflow: auto;
+    display: block;
+}
+
+.media-block .media .img {
+	width: 100%;
+}
+
+/* thb-left */
+.media-block.thb-left .hd,
+.media-block.thb-left .bd {
+    float: left;
+    width: 54%;
+    vertical-align: top;
+}
+
+.media-block.thb-left .media {
+    float: left;
+    margin-right: 4%;
+    margin-top: 0;
+    width: 42%;
+    vertical-align: top;
+}
+
+/* thb-right */
+.media-block.thb-right .hd,
+.media-block.thb-right .bd {
+    float: right;
+    width: 54%;
+    vertical-align: top;
+    text-align: right;
+}
+
+.media-block.thb-right .media {
+    float: right;
+    margin-left: 4%;
+    margin-top: 0;
+    width: 42%;
+    vertical-align: top;
+}
+
+/* 
+ * HEADER
+ */
+
+/* header */
+.header .wrapper {
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+.search {
+	text-align: right;
+}
+
+.primary-logo {
+	width: 137px;
+	height: 162px;
+	display: inline-block;	
+	margin-right: 8px;
+}
+
+/* screamer */
+.screamer {
+	text-align: center;
+}
+
+.screamer .rubric {
+	color: #ee2e24;
+	font-family: Times,serif;
+	font-weight: bold;
+	font-size: 19px;
+	font-style: italic;
+}
+
+.screamer .heading {  /* TODO: legacy css */
+	display: block;
+	font-family: "TitlingGothicFBMediumComp","Arial Narrow",Arial,sans-serif;
+	font-size: 53px;
+	letter-spacing: .02em;
+	font-weight: normal;
+	padding: 0;
+	line-height: 60px;
+	text-transform: uppercase;
+	height: 65px;
+	overflow: hidden;
+	width: 100%;
+}
+
+/* 
+ * NAV
+ */
+.nav {
+	margin-top: 13px;
+	height: 30px;
+	overflow: hidden;
+	text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;	
+}
+
+/* trending */
+.nav .trend {
+	float: left;
+	vertical-align: top;
+}
+
+.nav .trending-topics {
+	background-color: #000;
+	float: left;
+	padding-left: 20px;
+}
+
+.nav .trending-topics li {
+	padding-right: 10px;
+	float: left;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 30px;
+}
+
+.nav .trending-topics li:before {
+	content: '/';
+	padding-right: 10px;
+	color: #fff;
+}
+
+.nav .trending-topics li:first-child:before {
+	content: '';
+}
+
+.nav .trending-topics a {
+	color: #fff;
+	display: inline-block;
+}
+
+
+/* 
+ * COLUMNS
+ */
+.homepage .left-col {
+	margin-top: 20px;
+}
+
+.homepage .cheat-col {
+	margin-top: -12px;
+}
+
+/* 
+ * TOPBOX
+ */
+.homepage .top-box .bd {
+	background-color: #000;
+	padding: 0 20px 20px;
+	margin-top: -4px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;	
+}
+
+.homepage .top-box .bd a {
+	color: #f4f2df;
+	font-family: "TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
+
+.homepage .top-box .comment-box-sm {
+	top: -34px;
+}
+
+.homepage .top-box .title {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+.homepage .top-box .dek {
+	font-size: 14px;
+}
+
+.homepage .top-box .byline,
+.homepage .featured-story .byline {
+	font-size: 11px;
+	font-family: Georgia, Times, serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+/* 
+ * FEATURED STORY
+ */
+.homepage .featured-story {
+	margin-top: 30px;
+}
+
+.homepage .featured-story .rubric {
+	color: #ee2e24;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+	line-height: 1.2;
+	margin-bottom: 4px;
+}
+
+.homepage .featured-story .title {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-family: "TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+	line-height: .95;
+}
+
+.homepage .featured-story .dek {
+	font-size: 15px;
+	font-family: Georgia, Times, serif;
+	line-height: 1.2;
+	margin-top: 6px;
+}
+
+/* third - width 30% */
+.homepage .featured-story.third {
+	width: 30%;
+	margin-left: 3%;
+	float: left;
+}
+
+.homepage .featured-story.third:first-child {
+	margin-left: 0;
+}
+
+/* half - width 48% */
+.homepage .featured-story.half {
+	width: 48%;
+	margin-left: 4%;
+	float: left;
+}
+
+.homepage .featured-story.half:first-child {
+	margin-left: 0;
+}
+
+/* center */
+.homepage .featured-story.center .title {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-family: "TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+	line-height: .95;
+}
+
+/* text-only */
+.homepage .featured-story.center.text-only .title {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-family: "TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+	line-height: .95;
+}
+
+/* text-only */
+.homepage .featured-story.center.title-img-only .title {
+	text-transform: none;
+	font-size: 24px;
+	font-family: "TitlingGothicFBMediumComp", "Arial Narrow", Arial, sans-serif;
+	line-height: .95;
+}
+
+
+
+
+
+.nav,
+.left-col,
+.cheat-col,
+.right-col {
+	display: inline-block;
+}
+
+
+
+

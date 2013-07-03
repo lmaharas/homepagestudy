@@ -1,0 +1,26 @@
+<header class="header span_18 clearfix"> 
+    <div class="search"> 
+        <img src="img/sections/search_fb_tw_user.png">
+    </div>  
+    <a class="primary-logo" href="/index.html"> 
+        <img src="http://cdn.thedailybeast.com/etc/clientlibs/dailybeast/img/logo/daily-beast.png.dimg.png/c853393_2.cached.png" width="137" alt="The Daily Beast"/>
+    </a>
+    <div class="wrapper span_17">
+        <div class="screamer"> 
+            <a href="/cheats/2013/06/28/terminator-5-set-for-june-2015-release.html">
+                <h3 class="rubric">save us, john connor!</h3>
+                <h1 class="heading" property="dc:title">'Terminator' Reboot Coming in 2015</h1>
+            </a>
+        </div> 
+        <nav class="nav">
+            <h4 class="trend arrow-right-yellow bkgd-yellow">Trending</h4>
+            <ul class="trending-topics clearfix">
+                 <li><a href="#">Boston Marathon</a></li>
+                 <li><a href="#">Syria</a></li>
+                 <li><a href="#">Game of Thrones vs. Downton Abbey</a></li>
+                 <li><a href="#">Migration Reform...Still</a></li>
+                 <li><a href="#">Bradley Manning...</a></li>
+             </ul> 
+        </nav>
+    </div>
+</header>

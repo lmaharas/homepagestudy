@@ -1,0 +1,10 @@
+{
+  "name": "prototype-dailybeast",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-dustjs": "~0.2.2",
+    "grunt-contrib-watch": "~0.4.4",
+    "csv": "~0.3.2"
+  }
+}
